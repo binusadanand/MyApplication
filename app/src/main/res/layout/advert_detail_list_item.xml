@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|left">
+
+    <ImageView
+        android:id="@+id/advert_item_type_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="top|start"
+        android:src="@drawable/ic_list_black_24dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/advert_item_details_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/petroleum"
+                android:text="Hello this is the title of the Advert. Hello this is the title of the Advert." />
+
+            <TextView
+                android:id="@+id/advert_item_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/petroleum"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:text="Type" />
+
+        </LinearLayout>
+            <View android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/silicon"/>
+
+    </LinearLayout>
+</LinearLayout>

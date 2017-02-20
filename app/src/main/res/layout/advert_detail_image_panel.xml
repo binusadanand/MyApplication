@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_collapseMode="parallax">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/advert_detailed_image_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <TextView
+        android:id="@+id/advert_detailed_image_page_count"
+        android:layout_margin="20dp"
+        android:layout_gravity="left|bottom"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/petroleum"
+        android:background="@drawable/page_count_background"/>
+
+</FrameLayout>
